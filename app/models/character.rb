@@ -21,4 +21,10 @@
 class Character < ApplicationRecord
   belongs_to :user
   validates_presence_of :name
+
+  def get_description
+    return self.description if self.description
+
+    "A mysterious character from a long lost story"
+  end
 end

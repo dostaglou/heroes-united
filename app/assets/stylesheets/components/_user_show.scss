@@ -1,0 +1,9 @@
+.user-show {
+	width: 90%;
+	margin: 0 auto;
+	.character-item {
+		background: $dark-background-color;
+		display: flex;
+		justify-content: space-between;
+	}
+}

@@ -4,6 +4,7 @@
   </div>
   <div class="navbar-links">
     <% if current_user %>
+      <%= link_to "My Characters", new_user_registration_path %>
       <%= link_to "My Page", user_path(current_user.id) %>
       <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
     <% else %>
