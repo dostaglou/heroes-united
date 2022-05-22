@@ -1,0 +1,46 @@
+.character-show {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1em;
+
+	.character-show-dashboard {
+		width: 40%;
+		img { width: 100%; }
+	}
+	.character-show-details {
+		width: 60%;
+
+		.character-show-title	{
+			border-bottom: solid $dark-background-color 1px;
+			width: 90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			.character-show-name {
+				font-size: 2em;
+			}
+			.character-show-creator {
+				font-size: 1.4em;
+				align-self: center;
+			}
+		}
+		.character-show-quote {
+			border-bottom: solid $dark-background-color 1px;
+			margin: auto;
+			text-align: center;
+			vertical-align: middle;
+			width: 90%;
+			background: $base-background-color;
+			line-height: 3em;
+		}
+		.character-show-description {
+			border-bottom: solid $dark-background-color 1px;
+			margin: auto;
+			text-align: center;
+			vertical-align: middle;
+			width: 90%;
+			background: $base-background-color;
+			line-height: 5em;
+		}
+	}
+}

@@ -27,4 +27,10 @@ class Character < ApplicationRecord
 
     "A mysterious character from a long lost story"
   end
+
+  def get_quote
+    return self.quote if self.quote
+
+    "A mysterious character from a long lost story"
+  end
 end

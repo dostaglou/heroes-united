@@ -1,0 +1,17 @@
+<div class="character-show">
+	<div class="character-show-details">
+		<div class="character-show-title">
+			<div class="character-show-name"><%= character.name %></div>
+			<div class="character-show-creator">creator: <%= character.user.username %></div>
+		</div>
+		<div class="character-show-quote">
+			<%= character.get_quote %>
+		</div>
+		<div class="character-show-description">
+			<%= character.get_description %>
+		</div>
+	</div>
+	<div class="character-show-dashboard">
+		<%= image_tag("alice-alinari-high.jpg") %>
+	</div>
+</div>
