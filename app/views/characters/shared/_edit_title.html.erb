@@ -1,0 +1,16 @@
+<%= form_with html: { class: "character-show-details-title", data: { character_target: "title", action: "submit->character#updateDetails" } } do |f| %>
+	<div class="character-show-title">
+		<div class="character-show-creator">creator: <%= character.user.username %></div>
+		<%= f.text_field :name,
+										  class: "character-show-name",
+											value: character.name,
+										  data: { character_target: "name" } %>
+		<%= f.submit class: "button" %>
+	</div>
+	<div class="character-show-quote">
+		<%= character.get_quote %>
+	</div>
+	<div class="character-show-description">
+		<%= character.get_description %>
+	</div>
+<% end %>

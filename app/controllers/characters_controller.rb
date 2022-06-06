@@ -1,6 +1,9 @@
 class CharactersController < ApplicationController
-  before_action :set_character, only: [:show, :edit, :delete]
+  before_action :set_character, only: [:show, :edit, :edit_title, :delete]
 
+  PARTIAL_MAPPING = {
+    title_edit: "characters/shared/edit_title"
+  }
   def index
   end
 
@@ -14,6 +17,14 @@ class CharactersController < ApplicationController
   end
 
   def edit
+
+  end
+
+  def edit_title
+    respond_to do |format|
+      format.html
+      format.text { render partial: "characters/shared/edit_title", locals: { character: @character }, formats: [:html] }
+    end
   end
 
   def update
