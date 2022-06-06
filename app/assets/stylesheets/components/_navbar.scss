@@ -2,12 +2,12 @@
   background-color: $base-background-color;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em;
 
   .navbar-logo {
     font-size: 2.4em;
-    margin-left: 0.5em
+    margin-left: 0.5em;
   }
-
   .navbar-links {
     display: flex;
     justify-content: end;
@@ -15,7 +15,15 @@
     align-self: center;
     margin-right: 1em;
     a {
+      color: inherit;
+      transition-property: color;
+      transition-duration: 1s;
       margin: 0 1em;
+      &:hover {
+        color: $color-blue;
+        transition-property: color;
+        transition-duration: 1s;
+      }
     }
   }
 }

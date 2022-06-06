@@ -1,7 +1,6 @@
 .character-show {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 1em;
 
 	.character-show-dashboard {
 		width: 40%;
@@ -16,12 +15,13 @@
 			margin: auto;
 			display: flex;
 			justify-content: space-between;
+
 			.character-show-name {
 				font-size: 2em;
 			}
 			.character-show-creator {
-				font-size: 1.4em;
-				align-self: center;
+				font-size: 1em;
+				align-self: end;
 			}
 		}
 		.character-show-quote {

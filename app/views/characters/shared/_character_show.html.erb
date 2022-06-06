@@ -1,14 +1,17 @@
-<div class="character-show">
+<div class="character-show" data-controller="character" data-character-request-value="<%=  %>">
 	<div class="character-show-details">
-		<div class="character-show-title">
-			<div class="character-show-name"><%= character.name %></div>
-			<div class="character-show-creator">creator: <%= character.user.username %></div>
-		</div>
-		<div class="character-show-quote">
-			<%= character.get_quote %>
-		</div>
-		<div class="character-show-description">
-			<%= character.get_description %>
+		<div class="character-show-details-title" data-character-target="title">
+			<div class="character-show-title">
+				<div class="character-show-creator">creator: <%= character.user.username %></div>
+				<div class="character-show-name"><%= character.name %></div>
+				<button class="button" data-action="click->character#editDetails">Edit</button>
+			</div>
+			<div class="character-show-quote">
+				<%= character.get_quote %>
+			</div>
+			<div class="character-show-description">
+				<%= character.get_description %>
+			</div>
 		</div>
 	</div>
 	<div class="character-show-dashboard">
